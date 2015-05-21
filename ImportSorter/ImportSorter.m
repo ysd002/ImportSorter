@@ -8,6 +8,7 @@
 
 #import "ImportSorter.h"
 // :: Other ::
+#import "NSDocument+ImportSorter.h"
 #import "ObjCImportSorterRunner.h"
 #import "Preferences.h"
 #import "SwiftImportSorterRunner.h"
@@ -77,6 +78,7 @@ static NSString *const IMPORT_SORT_SHORTCUT_KEY = @"s";
 {
     [_menu removeAllItems];
     [self addSortOnClickMenuItem];
+    [self addSortOnSaveMenuItem];
 }
 
 - (void)addSortOnClickMenuItem
@@ -88,6 +90,41 @@ static NSString *const IMPORT_SORT_SHORTCUT_KEY = @"s";
     [sortOnClickItem setKeyEquivalentModifierMask:NSControlKeyMask];
     [sortOnClickItem setTarget:self];
     [_menu addItem:sortOnClickItem];
+}
+
+- (void)addSortOnSaveMenuItem
+{
+    NSString *title = NSLocalizedString(@"Enable Sort on Save", nil);
+    if ([self sortOnSavePrefs])
+        title = NSLocalizedString(@"Disable Sort on Save", nil);
+    
+    NSMenuItem *sortOnSaveMenuItem = [[NSMenuItem alloc] initWithTitle:title
+                                                                action:@selector(toggleSortOnSave)
+                                                         keyEquivalent:@""];
+    [sortOnSaveMenuItem setTarget:self];
+    [_menu addItem:sortOnSaveMenuItem];
+}
+
+- (void)toggleSortOnSave
+{
+    BOOL sortOnSave = ![self sortOnSavePrefs];
+
+    [_preferences setObject:@(sortOnSave)
+                     forKey:[self sortOnSavePreferencesKey]];
+    [_preferences synchronize];
+
+    [NSDocument setSortOnSave:sortOnSave];
+    [self configureSubMenuItems];
+}
+
+- (BOOL)sortOnSavePrefs
+{
+    return [[self.preferences objectForKey:[self sortOnSavePreferencesKey]] boolValue];
+}
+
+- (NSString *)sortOnSavePreferencesKey
+{
+    return [self.bundle.bundleIdentifier stringByAppendingString:@".sortOnSave"];
 }
 
 - (void)sortImport

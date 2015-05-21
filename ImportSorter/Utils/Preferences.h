@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 Jun Hashimoto. All rights reserved.
 //
 
+// :: Framework ::
 #import <Foundation/Foundation.h>
 
 @interface Preferences : NSObject

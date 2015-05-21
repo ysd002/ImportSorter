@@ -11,7 +11,9 @@
 
 @interface ImportSorter : NSObject
 
-+ (instancetype)sharedPlugin;
-
 @property (nonatomic, strong, readonly) NSBundle* bundle;
+
++ (instancetype)sharedPlugin;
+- (void)sortImport;
+
 @end

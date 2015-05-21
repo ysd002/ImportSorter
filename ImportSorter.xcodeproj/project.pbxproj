@@ -17,6 +17,7 @@
 		243BD6191AAFBD6B00E5323B /* XcodeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 243BD6161AAFBD6B00E5323B /* XcodeHelper.m */; };
 		24B864D51AC6DDAE009ADFAD /* SwiftClassRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B864D41AC6DDAE009ADFAD /* SwiftClassRole.m */; };
 		24B864D81AC6E302009ADFAD /* SwiftImportSorterRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B864D71AC6E302009ADFAD /* SwiftImportSorterRunner.m */; };
+		FC3A04211B0DA49700577236 /* NSDocument+ImportSorter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3A04201B0DA49700577236 /* NSDocument+ImportSorter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		24B864D41AC6DDAE009ADFAD /* SwiftClassRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftClassRole.m; sourceTree = "<group>"; };
 		24B864D61AC6E302009ADFAD /* SwiftImportSorterRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftImportSorterRunner.h; sourceTree = "<group>"; };
 		24B864D71AC6E302009ADFAD /* SwiftImportSorterRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwiftImportSorterRunner.m; sourceTree = "<group>"; };
+		FC3A041F1B0DA48600577236 /* NSDocument+ImportSorter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDocument+ImportSorter.h"; sourceTree = "<group>"; };
+		FC3A04201B0DA49700577236 /* NSDocument+ImportSorter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDocument+ImportSorter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 			children = (
 				243BD6061AAFBC1100E5323B /* ImportSorter.h */,
 				243BD6071AAFBC1100E5323B /* ImportSorter.m */,
+				FC3A041F1B0DA48600577236 /* NSDocument+ImportSorter.h */,
+				FC3A04201B0DA49700577236 /* NSDocument+ImportSorter.m */,
 				243BD60E1AAFBD6B00E5323B /* ObjC */,
 				24B864D21AC6DD9B009ADFAD /* Swift */,
 				243BD6131AAFBD6B00E5323B /* Utils */,
@@ -205,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24B864D51AC6DDAE009ADFAD /* SwiftClassRole.m in Sources */,
+				FC3A04211B0DA49700577236 /* NSDocument+ImportSorter.m in Sources */,
 				243BD6181AAFBD6B00E5323B /* ObjCImportSorterRunner.m in Sources */,
 				24B864D81AC6E302009ADFAD /* SwiftImportSorterRunner.m in Sources */,
 				243BD6171AAFBD6B00E5323B /* ObjCClassRole.m in Sources */,

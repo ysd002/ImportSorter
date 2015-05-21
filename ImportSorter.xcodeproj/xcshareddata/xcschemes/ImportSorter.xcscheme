@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "890A4B3E171F031300AFE577"
+               BlueprintIdentifier = "243BD5F91AAFBC1100E5323B"
                BuildableName = "ImportSorter.xcplugin"
                BlueprintName = "ImportSorter"
                ReferencedContainer = "container:ImportSorter.xcodeproj">
@@ -56,12 +56,13 @@
       allowLocationSimulation = "NO"
       viewDebuggingEnabled = "No">
       <PathRunnable
+         runnableDebuggingMode = "0"
          FilePath = "/Applications/Xcode.app">
       </PathRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "890A4B3E171F031300AFE577"
+            BlueprintIdentifier = "243BD5F91AAFBC1100E5323B"
             BuildableName = "ImportSorter.xcplugin"
             BlueprintName = "ImportSorter"
             ReferencedContainer = "container:ImportSorter.xcodeproj">
